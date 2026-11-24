@@ -1,0 +1,26 @@
+DRUG_CLASS,YEAR,SPENDING_BN,CLAIMS_M
+Anticoagulant (DOAC),2020,15.24,22.26
+Anticoagulant (DOAC),2021,18.38,24.29
+Anticoagulant (DOAC),2022,21.49,26.27
+Anticoagulant (DOAC),2023,24.85,28.59
+Anticoagulant (DOAC),2024,27.21,31.51
+DPP-4 inhibitor,2020,6.63,8.42
+DPP-4 inhibitor,2021,6.88,8.0
+DPP-4 inhibitor,2022,6.9,7.5
+DPP-4 inhibitor,2023,6.8,7.01
+DPP-4 inhibitor,2024,6.16,6.91
+GLP-1 / GIP,2020,7.22,6.02
+GLP-1 / GIP,2021,10.19,7.89
+GLP-1 / GIP,2022,14.21,10.41
+GLP-1 / GIP,2023,22.61,16.55
+GLP-1 / GIP,2024,27.9,22.16
+Insulin,2020,15.34,25.57
+Insulin,2021,15.55,24.35
+Insulin,2022,15.4,23.47
+Insulin,2023,15.91,23.62
+Insulin,2024,7.67,23.48
+SGLT2 inhibitor,2020,3.99,4.53
+SGLT2 inhibitor,2021,6.01,6.28
+SGLT2 inhibitor,2022,9.38,9.24
+SGLT2 inhibitor,2023,14.18,13.37
+SGLT2 inhibitor,2024,17.9,18.36
