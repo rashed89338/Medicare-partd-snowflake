@@ -359,34 +359,6 @@ flowchart LR
 | [\`charts/\`](charts) | Six SVG chart previews for GitHub |
 | [\`scripts/\`](scripts) | Python helper utilities and field metadata |
 
-## Reproduce this project
-
-**Prerequisites:** Snowflake account with appropriate permissions, the CMS CSV, and optionally Python for chart regeneration.
-
-1. Execute [\`sql/01_setup.sql\`](sql/01_setup.sql) in Snowflake. **Review account-level permissions first**; the setup uses \`ACCOUNTADMIN\` to create the project role, warehouse, resource monitor and database.
-2. Download the public CMS Medicare Part D dataset and upload the CSV through **Snowsight → Add Data → Load files into a Stage** to \`@MEDICARE_PARTD.RAW.CMS_STAGE\`. A Snowsight SQL worksheet cannot directly upload a file from your local disk.
-3. Verify the stage contents and run the remaining SQL in sequence:
-
-\`\`\`sql
-LIST @MEDICARE_PARTD.RAW.CMS_STAGE;
-
--- Run these files in order:
--- sql/02_load_raw.sql
--- sql/03_staging.sql
--- sql/04_marts.sql
--- sql/05_analysis.sql
-\`\`\`
-
-4. Compare the SQL outputs to the CSV files in [\`results/\`](results).
-5. Optionally regenerate local PNG charts from the exported results:
-
-\`\`\`bash
-python -m pip install -r requirements.txt
-python scripts/make_charts.py .
-\`\`\`
-
-The full ranked concentration CSV, source CMS CSV, and original PNG exports were included in the author's source project package but are **not all hosted in this repository**. The public CMS dataset can be obtained from the source link below; a compact concentration checkpoints export is included here. The optional local Python workflow has not been independently tested end-to-end in this published revision.
-
 ## Data quality and interpretation
 
 <details>
