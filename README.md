@@ -40,6 +40,28 @@ volume/spending-per-unit change, concentration,
 brand/generic mix, growth, and manufacturers
 ```
 
+## Visualizations
+
+### Yearly reported gross spending
+![Medicare Part D spending 2020–2024](charts/01_total_spending.svg)
+
+### Highest-spending drugs, 2024
+![Top ten drugs in 2024](charts/02_top10_drugs_2024.svg)
+
+### Selected drug-class spending trends
+![Spending by selected drug classes](charts/03_drug_class_trends.svg)
+
+### Spending-growth decomposition
+![Spending change by component](charts/04_growth_decomposition.svg)
+
+### Brand versus generic shares (heuristic)
+![Brand and generic spending and claims](charts/05_brand_vs_generic.svg)
+
+### 2024 spending concentration (summary)
+![Concentration summary](charts/06_concentration.svg)
+
+*The charts are SVG renditions of the published analysis outputs. The concentration graphic shows an approximate summary rather than the full cumulative concentration curve. The original PNGs and the full concentration export remain in the prepared local ZIP.*
+
 ## SQL scripts
 
 - `sql/01_setup.sql`: project role, warehouse, cost monitor, database, schemas and staging area.
@@ -69,4 +91,4 @@ brand/generic mix, growth, and manufacturers
 
 CMS Medicare Part D Spending by Drug, dataset ID `7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b`. [CMS dataset](https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-part-d-spending-by-drug/) and [data dictionary](https://data.cms.gov/resources/medicare-part-d-spending-by-drug-data-dictionary).
 
-**Note:** SQL and documentation are being added here first; large source CSV files and PNG figures from the local project archive may need separate uploads.
+**File availability:** This repository includes SQL, Python utilities, eight smaller analysis exports and SVG chart previews. The 5.3 MB public CMS source CSV, the full concentration-series export, and the original PNG chart files are retained in the locally prepared ZIP and have not yet been uploaded here. To reproduce the full workflow, download the CSV from CMS or add it from the local archive.
